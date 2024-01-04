@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './main.css';
+import '../dist/output.css';
 import App from './App';
 import { DarkModeProvider } from './context/DarkModeContext';
 

@@ -7,7 +7,6 @@ dist-ssr
 
 # production
 /main
-/dist
 /src/out
 /.junk/*
 
