@@ -1,11 +1,13 @@
 node_modules
 .DS_Store
+dist
 dist-ssr
 *.local
 .junk
 
 # production
 /main
+/dist
 /src/out
 /.junk/*
 

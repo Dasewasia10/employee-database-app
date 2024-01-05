@@ -32,8 +32,8 @@
     "type-check": "tsc",
     "lint": "eslint . --ext js,jsx,ts,tsx",
     "lint:fix": "eslint . --ext js,jsx,ts,tsx --fix",
-    "watch": "npx tailwindcss -i ./src/index.css -o ./dist/output.css --watch",
-    "tgen": "npx tailwindcss -i ./src/index.css -o ./dist/output.css"
+    "watch": "npx tailwindcss -i ./dist/main.css -o ./src/main.css --watch",
+    "tgen": "npx tailwindcss -i ./dist/main.css -o ./src/main.css"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
