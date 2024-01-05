@@ -9,7 +9,7 @@ export default ({ command }: ConfigEnv): UserConfig => {
   if (command === 'serve') {
     return {
       root: srcRoot,
-      base: '/',
+      base: './',
       plugins: [react()],
       resolve: {
         alias: {

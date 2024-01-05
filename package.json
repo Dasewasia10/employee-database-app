@@ -24,6 +24,7 @@
     "dev:db": "node src/db/server.mjs",
     "build": "npm run build:vite && npm run build:electron",
     "build:vite": "vite build",
+    "vercel-build": "vite build",
     "build:electron": "tsc -p electron",
     "dist": "npm run build && electron-builder",
     "pack": "npm run build && electron-builder --dir",
@@ -32,7 +33,9 @@
     "lint": "eslint . --ext js,jsx,ts,tsx",
     "lint:fix": "eslint . --ext js,jsx,ts,tsx --fix",
     "watch": "npx tailwindcss -i ./src/index.css -o ./dist/output.css --watch",
-    "tgen": "npx tailwindcss -i ./src/index.css -o ./dist/output.css"
+    "tgen": "npx tailwindcss -i ./src/index.css -o ./dist/output.css",
+    "start": "electron .",
+    "package-win": "electron-packager . markdownelectron  --icon=icon/language_markdown_outline_icon_139425.ico --overwrite --asar --platform=win32 --arch=ia32  --prune=true --out=buildsep --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"MarkDown\""
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
