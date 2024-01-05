@@ -20,13 +20,12 @@ function createWindow() {
     resizable: false,
     fullscreenable: true,
     webPreferences: {
-      nodeIntegration: true,
       preload: join(__dirname, 'preload.js')
     }
   });
 
   const port = process.env.PORT || 3000;
-  const url = isDev ? `http://localhost:${port}` : "https://employee-database-app-two.vercel.app/";
+  const url = isDev ? `http://localhost:${port}` : 'https://employee-database-app-two.vercel.app/';
 
   // and load the index.html of the app.
   if (isDev) {
